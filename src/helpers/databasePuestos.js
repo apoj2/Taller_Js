@@ -1,0 +1,123 @@
+export let puestosdb=[
+{
+	puesto:1
+},
+{
+	puesto:1
+},
+{
+	puesto:1
+},
+{
+	puesto:1
+},
+{
+	puesto:1
+},
+{
+	puesto:1
+},
+{
+	puesto:1
+},
+{
+	puesto:1
+},
+{
+	puesto:1
+},
+
+{
+	puesto:1
+},
+{
+	puesto:1
+},
+
+{
+	puesto:1
+},
+
+{
+	puesto:1
+},
+{
+	puesto:1
+},
+{
+	puesto:1
+},
+{
+	puesto:1
+},
+{
+	puesto:1
+},
+
+{
+	puesto:1
+},
+{
+	puesto:1
+},
+{
+	puesto:1
+},
+{
+	puesto:1
+},
+
+{
+	puesto:1
+},
+{
+	puesto:1
+},
+{
+	puesto:1
+},
+{
+	puesto:1
+},
+
+{
+	puesto:1
+},
+{
+	puesto:1
+},
+{
+	puesto:1
+},
+{
+	puesto:1
+},
+
+{
+	puesto:1
+},
+{
+	puesto:1
+},
+{
+	puesto:1
+},
+{
+	puesto:1
+},
+{
+	puesto:1
+},
+{
+	puesto:1
+},
+{
+	puesto:1
+},
+{
+	puesto:1
+},
+{
+	puesto:1
+},
+]
