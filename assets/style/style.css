@@ -4,3 +4,10 @@
 .bg-transparent{
 	background-color: transparent;
 }
+.pointer{
+	cursor: pointer;
+}
+.navbar-fixed{
+	position: fixed;
+	z-index: 1;				;
+}

@@ -3,121 +3,127 @@ export let puestosdb=[
 	puesto:1
 },
 {
-	puesto:1
+	puesto:2
 },
 {
-	puesto:1
+	puesto:3
 },
 {
-	puesto:1
+	puesto:4
 },
 {
-	puesto:1
+	puesto:5
 },
 {
-	puesto:1
+	puesto:6
 },
 {
-	puesto:1
+	puesto:7
 },
 {
-	puesto:1
+	puesto:8
 },
 {
-	puesto:1
-},
-
-{
-	puesto:1
-},
-{
-	puesto:1
+	puesto:9
 },
 
 {
-	puesto:1
+	puesto:10
+},
+{
+	puesto:11
 },
 
 {
-	puesto:1
-},
-{
-	puesto:1
-},
-{
-	puesto:1
-},
-{
-	puesto:1
-},
-{
-	puesto:1
+	puesto:12
 },
 
 {
-	puesto:1
+	puesto:13
 },
 {
-	puesto:1
+	puesto:14
 },
 {
-	puesto:1
+	puesto:15
 },
 {
-	puesto:1
-},
-
-{
-	puesto:1
+	puesto:16
 },
 {
-	puesto:1
-},
-{
-	puesto:1
-},
-{
-	puesto:1
+	puesto:17
 },
 
 {
-	puesto:1
+	puesto:18
 },
 {
-	puesto:1
+	puesto:19
 },
 {
-	puesto:1
+	puesto:20
 },
 {
-	puesto:1
+	puesto:21
 },
 
 {
-	puesto:1
+	puesto:22
 },
 {
-	puesto:1
+	puesto:23
 },
 {
-	puesto:1
+	puesto:24
 },
 {
-	puesto:1
+	puesto:25
+},
+
+{
+	puesto:26
 },
 {
-	puesto:1
+	puesto:27
 },
 {
-	puesto:1
+	puesto:28
 },
 {
-	puesto:1
+	puesto:29
+},
+
+{
+	puesto:30
 },
 {
-	puesto:1
+	puesto:31
 },
 {
-	puesto:1
+	puesto:32
+},
+{
+	puesto:33
+},
+{
+	puesto:34
+},
+{
+	puesto:35
+},
+{
+	puesto:36
+},
+{
+	puesto:37
+},
+{
+	puesto:38
+},
+{
+	puesto:39
+},
+{
+	puesto:40
 },
 ]

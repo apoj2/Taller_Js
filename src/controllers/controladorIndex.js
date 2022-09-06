@@ -51,3 +51,12 @@ console.log(objetoPeliculaNetflix.FechaDeLanzamiento)
 console.log(objetoPeliculaNetflix.Pais)
 console.log(objetoPeliculaNetflix.CalidadVisual)
 console.log(objetoPeliculaNetflix.Foto)
+
+let fila = document.getElementById("fila")
+fila.addEventListener("click",function(evento){
+
+	if(evento.target.parentElement.classList.contains("tarjeta") == true ){
+      window.location.href='./src/views/reservacion.html'
+	}
+
+})
