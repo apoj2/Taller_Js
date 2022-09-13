@@ -11,3 +11,36 @@
 	position: fixed;
 	z-index: 1;				;
 }
+.fs-20px{
+	
+font-size: 12px;
+}
+.img-banner2{
+	height: 540px;
+	
+}
+.tarjeta{
+	width: 100%;
+	height: 500px;
+	
+}
+.tarjeta2{
+	width: 25%;
+	height: 500px;
+	
+}
+.fs-DA{
+font-size: 1px;
+}
+.iconFooter:hover{
+	width: 100px;
+}
+.linksNavegacion:hover{
+	background-color: rgb(226, 73, 73);
+    height: 80px;
+	line-height: 60px;
+}
+.img-banner-promo{
+	width: 100%;
+	height: 300px;
+}

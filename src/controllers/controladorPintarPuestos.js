@@ -9,7 +9,7 @@ export function pintarPuestos(puestos){
 		columna.classList.add("col","p-2")
 
 		let tarjeta = document.createElement("div")
-		tarjeta.classList.add("rounded-circle","card","w-50","tarjeta","pointer","mx-auto","m-xxl-auto","d-block")
+		tarjeta.classList.add("rounded-circle","card","w-50","h-100","tarjeta","pointer","mx-auto","m-xxl-auto","d-block")
 
 		tarjeta.addEventListener("click",function(evento){
 			tarjeta.classList.remove("bg-danger")

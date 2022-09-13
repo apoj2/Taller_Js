@@ -5,48 +5,327 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<link rel="stylesheet" href="./assets/style/style.css">
 
 	
 </head>
-<body class="bg-dark">
+<body>
 
 	<header>
-		<nav class="navbar navbar-dark bg-transparent w-100 navbar-fixed">
+		<nav class="navbar navbar-expand-lg ">
+			<a class=" bg-danger m-2" href="#"><img src="./assets/img/logoprocinal2.png" alt="" class="img-fluid w-100 "></a>
 			<div class="container-fluid">
-			  <a class="navbar-brand" href="#">Corncin</a>
 			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			  </button>
 			  <div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav">
+				<ul class="navbar-nav ms-auto">
 				  <li class="nav-item">
-					<a class="nav-link disabled active" aria-current="page" href="#">Inicio</a>
+					<a class="nav-link my-4 linksNavegacion d-block text-center" aria-current="page" href="./src/views/peliculas.html"><i class="bi bi-camera-reels "></i>PELICULAS</a>
 				  </li>
 				  <li class="nav-item">
-					<a class="nav-link" href="#">Peliculas</a>
+					<a class="nav-link my-4 linksNavegacion d-block text-center " href="./src/views/teatros.html"><i class="bi bi-film "></i>TEATROS</a>
 				  </li>
 				  <li class="nav-item">
-					<a class="nav-link" href="./src/views/reservacion.html">Reservacion</a>
+					<a class="nav-link my-4 linksNavegacion d-block text-center" href="./src/views/"><i class="bi bi-credit-card-2-back "></i>CINE FANS</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link my-4 linksNavegacion d-block text-center" href="./src/views/tarifas.html"><i class="bi bi-coin "></i>TARIFAS</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link my-4 linksNavegacion d-block text-center" href="./src/views/promociones.html"><i class="bi bi-award "></i>PROMOCIONES</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link my-4 linksNavegacion d-block text-center" href=""><i class="bi bi-hand-index "></i>SERVICIOS</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link my-4 linksNavegacion d-block text-center" href="#"><i class="bi bi-apple "></i>COMIDAS</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link my-4 linksNavegacion d-block text-center" href="#"><i class="bi bi-receipt "></i>NOTICIAS</a>
+				  </li>
+				  <li class="nav-item border-end">
+					<a class="nav-link my-4 linksNavegacion d-block text-center" href="#"><i class="bi bi-envelope"></i>CONTACTENOS</a>
+				  </li>
+				  <li>
+					<a href="" class="d-flex ms-3 nav-link"><i class="bi bi-person-circle text-danger fs-1"></i><p class="fs-20px mt-4 ms-3">INICIAR SESION CINE FANS</p></a>
 				  </li>
 				</ul>
 			  </div>
 			</div>
 		  </nav>
+		  <div>
+			<div class="row bg-danger w-100">
+				<div class="col d-flex">
+					<h5 class="text-light m-3">CIUDAD SELECCIONADA<i class="bi bi-geo-alt mx-3"></i></h5>
+					<select class="form-select w-25 m-2" aria-label="Default select example">
+						<option selected class="text-secondary">Medellin</option>
+						<option value="1">One</option>
+						<option value="2">Two</option>
+						<option value="3">Three</option>
+					  </select>
+				</div>
+			</div>
+		  </div>
 	</header>
 	<main>
 		<section>
 			<video src="./assets/video/EL CONJURO 2 - Trailer 2 (Doblado) - Oficial Warner Bros. Pictures.mp4" class="w-100 " muted autoplay loop></video>
 		</section>
-		<section class="container my-5">
-			<div class="row row-cols-12 row-cols-md-3 w-100 p-3" id="fila">
+		<section>
+			<div class="container">
+				<div class="row w-100">
+					<div class="col">
+						<a href="" class="text-light nav-link bg-black btn w-25 mx-auto d-block mt-5"><h6 class="m-4">VER CARTELERA COMPLETA</h6></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="">
+			<div class="row row-cols-md-12 text-dark w-100 mt-5  mx-auto g-0">
+				<div class="col col-12 col-md-12 w-100 ">
+					<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+						<div class="carousel-indicators">
+						  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+						</div>
+						<div class="carousel-inner">
+						  <div class="carousel-item active">
+							<img src="./assets/img/barbaro3.jpg" class="img-fluid w-100 mx-auto d-block m-xxl-auto" alt="...">
+							<div class="carousel-caption d-none d-md-block">
+							  <h5>First slide label</h5>
+							  <p>Some representative placeholder content for the first slide.</p>
+							</div>
+						  </div>
+						  <div class="carousel-item">
+							<img src="./assets/img/emergenciaenelaire3.jpg" class="d-block w-100" alt="...">
+							<div class="carousel-caption d-none d-md-block">
+							  <h5>Second slide label</h5>
+							  <p>Some representative placeholder content for the second slide.</p>
+							</div>
+						  </div>
+						  <div class="carousel-item">
+							<img src="./assets/img/pasajealparaiso3.jpg" class="d-block w-100" alt="...">
+							<div class="carousel-caption d-none d-md-block">
+							  <h5>Third slide label</h5>
+							  <p>Some representative placeholder content for the third slide.</p>
+							</div>
+						  </div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+						  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						  <span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+						  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+						  <span class="visually-hidden">Next</span>
+						</button>
+					  </div>
+				</div>
+			    <div class="col col-12 col-md-8">
+					<div class="row row-cols-12 w-100">
+						<div class="col">
+							<div class="row row-cols-12 row-cols-md-12 g-0">
+								<div class="col col-12 col-md-12 d-flex  w-100">    
+										<div class="col w-100 p-3">
+											<h5 class="">SALA BLACKSTAR</h5>
+											<p class="text-secondary">Sala Lounge VIP</p>
+											<p>¿Ya disfrutaste de una pelicula en nuestra sala blackstar?¿Que esperas? Conocela y disfrutala en Cinemas procinal</p>
+										    <a href="" class="btn border-danger border border-3 text-danger fw-bold my-2 fs-6 w-50 mx-auto d-block m-xxl-auto"> + VER MAS</a>	
+										</div>
+										<div class="col w-100 p-3"><img src="./assets/img/SalaBlackstar.jpg" alt="" class="img-fluid w-100"></div>
+								</div>
+								<div class="col col-12 col-md-12 d-flex w-100">	    
+									<div class="col  p-3"><img src="./assets/img/SalaCineArte.jpg" alt="" class="img-fluid w-100"></div>
+									<div class="col  w-100 p-3">
+										<h5 class="">SALA CINE ARTE</h5>
+										<p class="text-secondary">cine autor</p>
+										<p>¿Ya disfrutaste de una pelicula en nuestra sala blackstar?¿Que esperas? Conocela y disfrutala en Cinemas procinal</p>
+										<a href="" class="btn border-danger border border-3 text-danger fw-bold fs-6 my-2 mx-auto d-block m-xxl-auto w-50"> + VER MAS</a>
+									</div>
+								</div>
+								<div class="col col-12 col-md-12 d-flex  w-100">
+								    
+								<div class="col  w-100  p-3">
+									<h5 class="">SALA BLACKSTAR</h5>
+									<p class="text-secondary">Sala Lounge VIP</p>
+									<p>¿Ya disfrutaste de una pelicula en nuestra sala blackstar?¿Que esperas? Conocela y disfrutala en Cinemas procinal</p>
+									<a href="" class="btn border-danger border border-3 text-danger fw-bold fs-6 my-2 mx-auto d-block m-xxl-auto w-50"> + VER MAS</a>
+								</div>
+								<div class="col  p-3"><img src="./assets/img/SalaSuperNova.jpg" alt="" class="img-fluid w-100"></div>
+							
+								</div>
+								<div class="col col-12 col-md-12 d-flex  w-100 ">
+									<div class="col  p-3"><img src="./assets/img/Sala4dx.jpg" alt="" class="img-fluid w-100"></div>
+									<div class="col  w-100  p-3">
+										<h5 class="">SALA BLACKSTAR</h5>
+										<p class="text-secondary">Sala Lounge VIP</p>
+										<p>¿Ya disfrutaste de una pelicula en nuestra sala blackstar?¿Que esperas? Conocela y disfrutala en Cinemas procinal</p>
+										<a href="" class="btn border-danger border border-3 text-danger fw-bold fs-6 my-2 mx-auto d-block m-xxl-auto w-50"> + VER MAS</a>
+									</div>
+								</div>						
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col col-12 col-md-4">
+					<div class="row w-100">
+						<div class="col col-12 col-md-12 border mx-1 img-banner2">
+                           img
+						</div>
+						<div class="row row-cols-12 row-cols-md-12 w-100  mx-1 bg-light">
+							<div class="col col-12 col-md-12 d-flex bg-light w-100">
+								<h2 class="fw-bold text-dark mx-auto d-block m-xxl-auto my-2"><i class="bi bi-file-earmark-text text-danger fs-4 mx-3"></i>NOTICIAS</h2>
+								<a href="" class="btn border-danger border border-3 text-danger fw-bold fs-6  my-2"> + VER TODAS</a>
+							</div>
+						</div>
+						<div class="row w-100">
+							<div class="col col-12 col-md-12 shadow my-1">
+								<p  class="text-secondary">Agosto 17 de 2022</p>
+								<h3>COMBO AMOR Y AMISTAD</h3>
+								<p>"Amor & Amistad en Grande. Llevate una de la s3 patinetas electricas"</p>
+							</div>
+							<div class="col col-12 col-md-12 shadow my-1">
+								<p  class="text-secondary">Septiembre 01 de 2022</p>
+								<h3>FESTIVAL DE CINEMA</h3>
+								<p>"El festival de cine para toda el area metropolitana.¡Vivelo! en CInemas Procinal Las Americas del 1 al 10 de septiembre de 2022"</p>
+							</div>
+							<div class="col col-12 col-md-12 shadow my-1">
+								<p  class="text-secondary">Septiembre 01 de 2022</p>
+								<h3>TEMPORADA STREET FOOD</h3>
+								<p>"¡Ven disfruta! Las mas deliciiosas combinaciones street food, elije tu favorita y te llevamos hast la silla de la sala"</p>
+							</div>
+						</div>
+					</div>
+				</div>
 
 			</div>
 		</section>
-	</main>
-	<footer>
 
+		<section>
+            <div class="row w-100 text-light g-0">
+				<div class="col col-12 col-md-8 bg-secondary">
+					<div class="row row-cols-12 row-cols-md-4 w-100">
+						<div class="col p-4">
+							<h2>¡REGISTRATE!</h2>
+							<p>Para recibir nuestro boletín semanal con la información de nuestra programación, promociones y eventos.</p>
+						</div>
+						<div class="col">
+							<div class="mb-3">
+								<label for="exampleInputEmail1" class="form-label bg-none" placeholder="Nombre">Nombre</label>
+								<input type="text" class="form-control" id="exampleInputText1" aria-describedby="emailHelp">
+							  </div>
+							  <div class="mb-3">
+								<div class="form-check">
+								  <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
+								  <label class="form-check-label" for="disabledFieldsetCheck">
+									<h6>Acepto <a href="" class="text-light">Terminos y condiciones</a></h6>
+								  </label>
+								</div>
+							  </div>
+						</div>
+						<div class="col">
+							<div class="mb-3">
+								<label for="exampleInputEmail1" class="form-label">Email address</label>
+								<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+								<div id="emailHelp" class="form-text text-light">We'll never share your email with anyone else.</div>
+							  </div>
+							  <div class="mb-3 ">
+								<button type="submit" class="btn text-light mx-auto d-block m-xxl-auto">ENVIAR</button>
+							  </div>
+						</div>
+						<div class="col">
+							<div class="mb-3 text-center">
+								<h3>COMUNICATE CON NOSTROS</h3>
+								<a href="" class="text-light">HAZ CLICK AQUI</a>
+							</div>
+							<div class="mb-3 text-center">
+								<h3>PREGUNTAS FRECUENTES</h3>
+								<a href="" class="text-light">LEER MÁS</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col col-12 col-md-4 bg-danger">
+					<div class="mb-3 text-center p-5">
+						<h5>¿QUIERES CONSULTAR TU HISTORIAL DE COMPRA?</h5>
+						<a href="" class="text-light">HAZ CLICK AQUI</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+	</main>
+	<section>
+		<div class="row row-cols-12 row-cols-md-4 w-100 bg-dark p-5 g-0">
+			<div class="col">
+				<a href=""><img src="./assets/img/logoprocinal2.png" alt="" class="img-fluid w-100"></a>
+			</div>
+			<div class="col text-light">
+				<h5>SOBRE CINEMA PROCINAL</h5>
+				<p>Cinemas Procinal SAS., es una empresa exhibidora de cine que cuenta con catorce multiplex en Medellín y el Valle de Aburrá, el Oriente cercano, el Urabá Antioqueño, y Sincelejo.</p>
+                <ul>
+					<li><a href="" class="text-danger fs-6"><i class="bi bi-chevron-double-right"></i>VER MAS</a></li>
+					<li><a href="" class="text-danger fs-6"><i class="bi bi-chevron-double-right"></i>Terminos y Condiciones de uso del sitio web</a></li>
+					<li><a href="" class="text-danger fs-6"><i class="bi bi-chevron-double-right"></i>Politica de privacidad de datos</a></li>
+					<li><a href="" class="text-danger fs-6"><i class="bi bi-chevron-double-right"></i>Terminos y condiciones cine fans</a></li>
+					<li><a href="" class="text-danger fs-6"><i class="bi bi-chevron-double-right"></i>Reglamento Autocinema</a></li>
+					<li><a href="" class="text-danger fs-6"><i class="bi bi-chevron-double-right"></i>Protocolo de Biosedguridad Autocinema</a></li>
+				</ul>			
+			</div>
+			<div class="col text-light">
+				<div class="row">
+					<h5>CONTACTANOS</h5>
+				<div class="row">
+					<div class="col col-md-12 d-flex">
+						<i class="bi bi-phone-fill text-danger mx-3 fw-bold"></i>
+						<p class="border-bottom">Antioquia-Sincelejo y Atlantico</p>	
+					</div>
+					<div class="col col-md-12 d-flex">
+						<i class="bi bi-phone-fill text-danger mx-3 fw-bold"></i>
+						<p class="border-bottom">604-444 22 44 Linea Unica</p>
+					</div>
+					<div class="col col-md-12 d-flex">
+						<i class="bi bi-phone-fill text-danger mx-3 fw-bold"></i>
+						<p class="border-bottom">01 8000 413 814 Line Gratuita nacional</p>
+					</div>
+					<div class="col col-md-12 d-flex">
+						<i class="bi bi-phone-fill text-danger mx-3 fw-bold"></i>
+						<p class="border-bottom">callcenter@procinal.com</p>
+					</div>
+				</div>
+				</div>
+				<div class="row">
+					<h5>TRABAJA CON NOSOTROS</h5>
+					<p>Unete a nuestro equipo de trabajo en Medellin, Rionegro, Apartado o Sincelejo adjunta tu hoja de vida aqui: </p>
+					<a href="" class="text-danger">Formulario</a>
+				</div>
+			</div>
+			<div class="col text-light">
+				<div class="row">
+					<h5>INFORMACION DE LA EMPRESA</h5>
+					<p>Promotora Nacional de Cines S.A.S Nit:
+						890939520-9 Cra 48 # 50 SUR 128 Local 5163. Centro Comercial Mayorca, Sabaneta, Colombia.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="row g-0 bg-black text-light">
+			<div class="col col-12 col-md-2 d-flex">
+			 <a href="" class="text-light iconFooter"><i class="bi bi-facebook mx-3"></i></a>
+			 <a href="" class="text-light iconFooter"><i class="bi bi-twitter mx-3"></i></a>
+			 <a href="" class="text-light iconFooter"><i class="bi bi-youtube mx-3"></i></a>
+			 <a href="" class="text-light iconFooter"><i class="bi bi-instagram mx-3"></i></a>
+			</div>
+			<div class="col col-12 col-md-4 fs-DA">© 2022 CINEMAS PROCINAL - Todos los derechos reservados - Prohibida su reproducción parcial o tota</div>
+			<div class="col col-12 col-md-3"><a href="" class="text-danger">Proteccion del consumidor</a></div>
+			<div class="col col-12 col-md-3"> Desarrollo web Apoj2</div>
+		</div>
 	</footer>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 

@@ -62,20 +62,5 @@ export let peliculasDB=[
 		foto:'../../assets/img/spiderman.jpg'
 		
 	},
-	{
-		Nombre:'Doctor Strange en el multiverso de la locura',
-		Duracion:'2:04:00',
-		Descripcion:'Viaja a lo desconocido con el Doctor Strange, quien, con la ayuda de tanto antiguos como nuevos aliados místicos, recorre las complejas y peligrosas realidades alternativas del multiverso para enfrentarse a un nuevo y misterioso adversario.',
-		Genero:{Genero1:'Fantasia',
-				Genero2:'Accion',
-				Genero3:'Aventura'},
-		Puntaje:'6',
-		Director:'Danny Elfman',
-		Actores:' Benedict Cumberbatch, Elizabeth Olsen, Chiwetel Ejiofor, Benedict Wong, Xochitl Gomez, Jett Klyne, Julian Hilliard, Sheila Atim, Adam Hugill, Michael Stuhlbarg',
-		FechaDeLanzamiento:'17-05-2022',
-		Pais:'United States Of America',
-		CalidadVisual:'HD',
-		foto:'../../assets/img/doctorstrange.jpg'
-		
-	}
+
 ]

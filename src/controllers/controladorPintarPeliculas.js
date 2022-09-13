@@ -6,13 +6,13 @@ export function pintarPeliculas(pelicula){
 	pelicula.forEach(function(peliculas){
       
 		let columna = document.createElement("div")
-		columna.classList.add("col","col-12","col-md-2","mx-3","h-50","card","my-3","p-0","columna","tarjeta","pointer")
+		columna.classList.add("col","col-12","col-md-2","card","p-0","columna","tarjeta2","pointer")
 
         let tarjeta = document.createElement("div")
-		tarjeta.classList.add("card-img-overlay","w-75","h-75","shadow","columna","tarjeta","pointer")
+		tarjeta.classList.add("card-img-overlay","shadow","columna","tarjeta","pointer")
 
 		let imagen = document.createElement('img')
-		imagen.classList.add("img-fluid","columna","rounded")
+		imagen.classList.add("img-fluid","columna","rounded","h-100")
 		imagen.src=peliculas.foto
 
 		let nombre = document.createElement("h2")
