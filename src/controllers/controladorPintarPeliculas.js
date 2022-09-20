@@ -13,15 +13,15 @@ export function pintarPeliculas(pelicula){
 
 		let imagen = document.createElement('img')
 		imagen.classList.add("img-fluid","columna","rounded","h-100")
-		imagen.src=peliculas.foto
+		imagen.src=peliculas.url
 
 		let nombre = document.createElement("h2")
-		nombre.classList.add("fw-bold","fs-6","card-text","text-white")
-		nombre.textContent=peliculas.Nombre
+		nombre.classList.add("fw-bold","fs-6","card-text","text-black")
+		nombre.textContent=peliculas.title
 
 		let duracion=document.createElement("h4")
-		duracion.classList.add("card-text","text-light","fw-bold")
-		duracion.textContent=peliculas.Duracion
+		duracion.classList.add("card-text","text-dark","fw-bold")
+		duracion.textContent=peliculas.id
 
 
 

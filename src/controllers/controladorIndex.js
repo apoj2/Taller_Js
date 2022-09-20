@@ -1,7 +1,12 @@
 import {arreglonumertospositivosynegativos} from '../helpers/database.js'
 import {arreglonumertospositivosynegativosObjeto}from '../helpers/database.js'
+
 import {pintarPeliculas} from './controladorPintarPeliculas.js'
+import {pintarNoticias} from './controladorPintarNoticias.js'
+
 import {peliculasDB} from '../helpers/databasePeliculas.js'
+import {noticiasDB} from '../helpers/databaseNoticas.js'
+
 
 let filtroNumerosPositivos = arreglonumertospositivosynegativos.filter(function(numeros){
 return numeros > 0
@@ -28,7 +33,8 @@ let objetoPeliculaNetflix ={
 	
 }
 
-pintarPeliculas(peliculasDB)
+pintarNoticias(noticiasDB)
+
 
 console.log(arreglonumertospositivosynegativos)
 
@@ -51,6 +57,16 @@ console.log(objetoPeliculaNetflix.FechaDeLanzamiento)
 console.log(objetoPeliculaNetflix.Pais)
 console.log(objetoPeliculaNetflix.CalidadVisual)
 console.log(objetoPeliculaNetflix.Foto)
+
+
+let filanoticias = document.getElementById("filanoticias")
+filanoticias.addEventListener("click",function(evento){
+
+	if(evento.target.parentElement.classList.contains("col")){
+        
+		window.location.href
+	}
+})
 
 let fila = document.getElementById("fila")
 fila.addEventListener("click",function(evento){
