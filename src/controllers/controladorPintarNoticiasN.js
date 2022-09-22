@@ -6,19 +6,19 @@ export function pintarNoticiasN(noticias){
     noticias.forEach(function(noticia){
 
         let columna = document.createElement("div")
-        columna.classList.add("col")
+        columna.classList.add("col","col-md-5","shadow","d-block","my-3","g-0","mx-5")
 
         let tarjeta = document.createElement("div")
-        tarjeta.classList.add("row","row-cols-12","row-cols-md-2")
+        tarjeta.classList.add("row","row-cols-12","row-cols-md-2","w-100","g-0")
 
         let columnatarjeta =document.createElement("div")
-        columnatarjeta.classList.add("col","col-12","col-md-4")
+        columnatarjeta.classList.add("col","col-12","col-md-6")
 
         let columnatarjeta2=document.createElement("div")
-        columnatarjeta2.classList.add("col,","col-12","col-md-8")
+        columnatarjeta2.classList.add("col,","col-12","col-md-6")
 
         let imagen = document.createElement("img")
-        imagen.classList.add("img-fluid","w-100")
+        imagen.classList.add("img-fluid","img-noticias","grayscale-promocion")
         imagen.src=noticia.foto
 
         let titulo = document.createElement("h2")

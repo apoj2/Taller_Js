@@ -9,29 +9,29 @@ export function pintarBotonesCategorias(categorias){
         columna.classList.add("col","m-3")
 
         let botonCategoria = document.createElement("button")
-        botonCategoria.classList.add("boton","bg-transparent","border-dark","border-4","text-dark","rounded-0","w-100")
+        botonCategoria.classList.add("boton","bg-transparent","border-secondary","border-4","text-secondary","rounded-0","w-100")
         
         if(categoria.categoriac == 5){
-            botonCategoria.classList.remove("bg-transparent","border","border-dark","border-4")
-            botonCategoria.classList.add("bg-danger")
+            botonCategoria.classList.remove("bg-transparent","border-secondary","border-4")
+            botonCategoria.classList.add("bg-danger","text-white","border-danger")
         }
 
         botonCategoria.addEventListener("mouseout",function(evento){
-            botonCategoria.classList.remove("border-dark","text-dark")
+            botonCategoria.classList.remove("border-secondary","text-secondary")
             botonCategoria.classList.add("border-danger","text-danger")
             if(categoria.categoriac == 5){
-                botonCategoria.classList.remove("bg-danger")
-                botonCategoria.classList.add("bg-transparent","border","border-2")
+                botonCategoria.classList.remove("bg-danger","text-white")
+                botonCategoria.classList.add("bg-transparent","border","border-2","text-danger")
                 
             }
          
         })
         botonCategoria.addEventListener("mouseleave",function(evento){
-            botonCategoria.classList.remove("boder-danger","text-danger")
-            botonCategoria.classList.add("border-dark","text-dark")
+            botonCategoria.classList.remove("border-danger","text-danger")
+            botonCategoria.classList.add("border-secondary","text-secondary")
             if(categoria.categoriac == 5){
-                botonCategoria.classList.remove("bg-transparent","border","border-dark","border-4")
-                botonCategoria.classList.add("bg-danger")
+                botonCategoria.classList.remove("bg-transparent","border","border-secondary","border-4")
+                botonCategoria.classList.add("bg-danger","text-white","border-danger")
                 
             }
         })

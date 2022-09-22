@@ -11,6 +11,15 @@
 	position: fixed;
 	z-index: 1;				;
 }
+.texto-informacion-contactos{
+font-size: 12.5px;
+}
+.texto-informacion-contactos-check{
+	font-size: 10.4px;
+}
+.logo-siguenos{
+	font-size: 15px;
+}
 .grayscale {
 	filter: none;
 	-webkit-filter: grayscale(0%);
@@ -25,19 +34,99 @@
 	width: 100%;
 	height: 100%;
 	}
-.fs-20px{
+	.grayscale-teatros {
+		filter: none;
+		-webkit-filter: grayscale(0%);
+		height: 300px;
+		z-index: 1;
+		}
+	.grayscale-teatros:hover {
+		z-index: 1;
+		filter: url("data:image/svg xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10 */
+		filter: gray; /*IE6-9*/
+		-webkit-filter: grayscale(100%); /*Chrome 19+ & Safari 6+*/
+		-webkit-transition: all 1.5s ease; /*Fade to color for Chrome and Safari*/
+		-moz-transition: all 1.5s ease;
+		-webkit-backface-visibility: hidden; /*Fix for transition flickering*/
+		width: 100%;
+		height: 300px;
+		}
+		.grayscale-promocion {
+			filter: none;
+			-webkit-filter: grayscale(0%);
+			}
+		.grayscale-promocion:hover{
+			filter: url("data:image/svg xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10 */
+			filter: gray; /*IE6-9*/
+			-webkit-filter: grayscale(100%); /*Chrome 19+ & Safari 6+*/
+			-webkit-transition: all 1.5s ease; /*Fade to color for Chrome and Safari*/
+			-moz-transition: all 1.5s ease;
+			-webkit-backface-visibility: hidden; /*Fix for transition flickering*/
+			width: 100%;
+			height: 300px;
+			}
+		.fs-20px{
 	
 font-size: 12px;
 }
 .img-banner2{
+	background-image: url("https://firebasestorage.googleapis.com/v0/b/cinetaller-94658.appspot.com/o/portada%20cinefans.png?alt=media&token=db58e070-edf7-4dbe-85e2-f80eeb4a3e1d");
+	background-size: cover;
+	background-position: 50%;
+	width: 100%;
 	height: 540px;
 	
 }
 .nombre-teatro{
 	position: absolute;
+	z-index: 1;
+    
+}
+.bg-negro-transparent{
+background-color: rgb(0,0,0,0.5);
 }
 .banner-peliculas{
 	background-image: url("https://firebasestorage.googleapis.com/v0/b/cinetaller-94658.appspot.com/o/4DX02BannerPeliculas.jpg?alt=media&token=996dc42d-7e5f-4977-95ac-9d9742b4fd55");
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: 40%;
+	background-size: cover;
+	height: 300px;
+}
+.banner-tarifas{
+	background-image: url("https://firebasestorage.googleapis.com/v0/b/cinetaller-94658.appspot.com/o/bannertarifas.jpg?alt=media&token=34e8d25b-5237-4928-b201-50bb080f19ad");
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: 40%;
+	background-size: cover;
+	height: 300px;
+}
+.banner-teatros{
+	background-image: url("https://firebasestorage.googleapis.com/v0/b/cinetaller-94658.appspot.com/o/bannerteatros.jpg?alt=media&token=65c3a79d-4754-4fc8-8234-bc4fc50f66be");
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: 40%;
+	background-size: cover;
+	height: 300px;
+}
+.banner-promociones{
+	background-image: url("https://firebasestorage.googleapis.com/v0/b/cinetaller-94658.appspot.com/o/02-banners-promociones.png?alt=media&token=5d372832-524b-4923-aa19-d95e15333a77");
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: 40%;
+	background-size: cover;
+	height: 300px;
+}
+.banner-servicios{
+	background-image: url("https://firebasestorage.googleapis.com/v0/b/cinetaller-94658.appspot.com/o/bannerservicios.jpg?alt=media&token=62ea61b1-fdf5-4baa-8ca4-12551bc93d30");
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: 40%;
+	background-size: cover;
+	height: 300px;
+}
+.banner-noticias{
+	background-image: url("https://firebasestorage.googleapis.com/v0/b/cinetaller-94658.appspot.com/o/bannerpromociones.png?alt=media&token=268e89ad-69e8-4a44-9b0e-08b4a7b8367e");
 	width: 100%;
 	background-repeat: no-repeat;
 	background-position: 40%;
@@ -61,12 +150,20 @@ font-size: 12px;
 	list-style: none;
 }
 .fs-DA{
-font-size: 1px;
+	margin-top: 5px;
+font-size: 9px;
 }
 .iconFooter:hover{
 	width: 100px;
 }
+.linksNavegacion{
+	color: red;
+}
+.bg-blancoT{
+	background-color: rgba(255, 255, 255, 0.5);
+}
 .linksNavegacion:hover{
+	color: white;
 	background-color: rgb(226, 73, 73);
     height: 80px;
 	line-height: 60px;
@@ -74,4 +171,18 @@ font-size: 1px;
 .img-banner-promo{
 	width: 100%;
 	height: 300px;
+}
+.a-logo{
+	width: 100px;
+}
+
+.img-logo{
+	width: 200px;
+}
+.img-logo:hover{
+	width: 150px;
+}
+.img-noticias{
+width: 250px;
+height: 260px;
 }

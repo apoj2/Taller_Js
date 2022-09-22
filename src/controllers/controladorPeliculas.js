@@ -12,6 +12,7 @@ console.log(peliculas.url)
 console.log(nombre.title)
 
 pintarBotonesCategorias(categoriasDB)
+pintarPeliculas(peliculasDB)
 
 
 let botonInformacionPeliculas=document.getElementById("btn-informacion-peliculas")
@@ -35,18 +36,3 @@ fila.addEventListener("click",function(evento){
 	}
 
 })
-let columna = document.createElement("div")
-		columna.classList.add("col","col-12","col-md-2","card","p-0","columna","tarjeta2","pointer")
-
-let nombre1 = document.createElement("h2")
-nombre1.classList.add("fw-bold","fs-6","card-text","text-black")
-nombre1.textContent=nombre.title
-
-let foto = document.createElement("img")
-foto.classList.add("img-fluid","w-100")
-foto.src=peliculas.url
-
-
-columna.appendChild(foto)
-columna.appendChild(nombre1)
-fila.appendChild(columna)

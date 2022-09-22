@@ -4,53 +4,82 @@ export function pintarServicios(servicios){
     filaServicios.innerHTML=""
 
     servicios.forEach(function(servicio){
-
+        
+      if(servicio.lado==1){
         let columna = document.createElement("div")
-        columna.classList.add("col")
+        columna.classList.add("col","col-12","col-md-12","d-flex","w-100","pointer")
 
-        let tarjeta = document.createElement("div")
-        tarjeta.classList.add("w-100","shadow","pointer","tarjeta-servicios")
+        let columna1 = document.createElement("div")
+        columna1.classList.add("col","w-100","p-3")
 
-        let imagen = document.createElement("img")
-        imagen.classList.add("img-fluid","w-100","grayscale")
-        imagen.src=servicio.foto
+        let columna2 = document.createElement("div")
+        columna2.classList.add("col","w-100","p-3")
 
         let nombre = document.createElement("h5")
-        nombre.classList.add("mx-3","mt-2","fw-bold")
         nombre.textContent=servicio.titulo
 
-        let separador=document.createElement("p")
-        separador.classList.add("mx-3")
-        separador.textContent="--------------------------------------------------"
-        
-
-        
+        let nombre2 = document.createElement("p")
+        nombre2.classList.add("text-secondary")
+        nombre2.textContent=servicio.titulo2
 
         let descripcion = document.createElement("p")
-        descripcion.classList.add("mx-3")
         descripcion.textContent=servicio.descripcion
-         
-        let divisionBoton = document.createElement("div")
 
+        let btnmasinfo = document.createElement("a")
+        btnmasinfo.classList.add("btn","border-danger","border-3","text-danger","fw-bold","my-2","fs-6","w-50","mx-auto","d-block","m-xxl-auto")
+        btnmasinfo.textContent="+ VER MAS "
 
-        let boton =document.createElement("a")
-        boton.classList.add("text-danger","nav-link","pointer","p-3","text-center")
-        boton.textContent="+ MAS INFORMACION"
-        
-        boton.addEventListener("mouseout",function(evento){
-            boton.classList.remove("nav-link")
-        })
-        boton.addEventListener("mouseleave",function(evento){
-            boton.classList.add("nav-link")
-        })
+        let imagen = document.createElement("img")
+        imagen.classList.add("img-fluid","w-100")
+        imagen.src=servicio.foto
 
-        tarjeta.appendChild(imagen)
-        tarjeta.appendChild(nombre)
-        tarjeta.appendChild(separador)
-        tarjeta.appendChild(descripcion)
-        tarjeta.appendChild(divisionBoton)
-        divisionBoton.appendChild(boton)
-        columna.appendChild(tarjeta)
+        columna1.appendChild(nombre)
+        columna1.appendChild(nombre2)
+        columna1.appendChild(descripcion)
+        columna1.appendChild(btnmasinfo)
+        columna2.appendChild(imagen)
+        columna.appendChild(columna1)
+        columna.appendChild(columna2)
         filaServicios.appendChild(columna)
+      }
+      if(servicio.lado==2){
+        let columna = document.createElement("div")
+        columna.classList.add("col","col-12","col-md-12","d-flex","w-100","pointer")
+
+        let columna1 = document.createElement("div")
+        columna1.classList.add("col","w-100","p-3")
+
+        let columna2 = document.createElement("div")
+        columna2.classList.add("col","w-100","p-3")
+
+        let nombre = document.createElement("h5")
+        nombre.textContent=servicio.titulo
+
+        let nombre2 = document.createElement("p")
+        nombre2.classList.add("text-secondary")
+        nombre2.textContent=servicio.titulo2
+
+        let descripcion = document.createElement("p")
+        descripcion.textContent=servicio.descripcion
+
+        let btnmasinfo = document.createElement("a")
+        btnmasinfo.classList.add("btn","border-danger","border-3","text-danger","fw-bold","my-2","fs-6","w-50","mx-auto","d-block","m-xxl-auto")
+        btnmasinfo.textContent="+ VER MAS"
+
+        let imagen = document.createElement("img")
+        imagen.classList.add("img-fluid","w-100")
+        imagen.src=servicio.foto
+
+        columna1.appendChild(imagen)
+        columna2.appendChild(nombre)
+        columna2.appendChild(nombre2)
+        columna2.appendChild(descripcion)
+        columna2.appendChild(btnmasinfo)
+        columna.appendChild(columna1)
+        columna.appendChild(columna2)
+        filaServicios.appendChild(columna)
+      }
+
     })
+
 }

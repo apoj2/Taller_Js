@@ -3,7 +3,9 @@ import {arreglonumertospositivosynegativosObjeto}from '../helpers/database.js'
 
 import {pintarPeliculas} from './controladorPintarPeliculas.js'
 import {pintarNoticias} from './controladorPintarNoticias.js'
+import {pintarServicios} from './controladorPintarServicios.js'
 
+import {serviciosDB} from '../helpers/databaseServicios.js'
 import {peliculasDB} from '../helpers/databasePeliculas.js'
 import {noticiasDB} from '../helpers/databaseNoticas.js'
 
@@ -34,7 +36,7 @@ let objetoPeliculaNetflix ={
 }
 
 pintarNoticias(noticiasDB)
-
+pintarServicios(serviciosDB)
 
 console.log(arreglonumertospositivosynegativos)
 
@@ -68,11 +70,11 @@ filanoticias.addEventListener("click",function(evento){
 	}
 })
 
-let fila = document.getElementById("fila")
+/*let fila = document.getElementById("fila")
 fila.addEventListener("click",function(evento){
 
 	if(evento.target.parentElement.classList.contains("tarjeta") == true ){
       window.location.href='./src/views/reservacion.html'
 	}
 
-})
+})*/

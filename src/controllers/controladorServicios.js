@@ -1,5 +1,5 @@
 import {serviciosDB} from '../helpers/databaseServicios.js'
 
-import {pintarServicios} from './controladorPintarServicios.js'
+import {pintarServiciosN} from './controladorPintarServiciosN.js'
 
-pintarServicios(serviciosDB)
+pintarServiciosN(serviciosDB)
