@@ -15,7 +15,7 @@ export function pintarBotonesCiudades(ciudades){
         boton.classList.add("btn-outline-danger","text-white","m-2")
         })
         boton.addEventListener("mouseleave",function(evento){
-            boton.classList.remove("btn-outline-danger","text-white")
+            boton.classList.remove("btn-outline-danger","text-white","m-2")
             boton.classList.add("bg-white","text-danger")
             
         })

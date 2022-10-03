@@ -35,6 +35,7 @@ let objetoPeliculaNetflix ={
 	
 }
 
+
 pintarNoticias(noticiasDB)
 pintarServicios(serviciosDB)
 

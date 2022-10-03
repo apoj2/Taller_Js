@@ -7,7 +7,8 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<link rel="stylesheet" href="../../assets/style/style.css">
 
 	
@@ -72,37 +73,80 @@
 				</div>
 			</div>
 		  </div>
-		  <section>
-			<div class="row" id="botonesCategoria">
 
-			</div>
-		  </section>
 	</header>
 	<main>
-
 		<section>
             <div class="p-4">
+				<div class="row w-100 ">
+					<div class="container d-flex">
+						<div>
+							<p class="mx-2 p-2">Fecha</p>
+						</div>
+						<div class="row w-25">
+							<form>
+								<div class="row form-group">
+									<div class="col ">
+										<div class="input-group date" id="datepicker">
+											<input type="text" class="form-control w-25" placeholder="Seleccionar:">
+											<span class="input-group-append">
+												<span class="input-group-text bg-white d-block">
+													<i class="bi bi-calendar"></i>
+												</span>
+											</span>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					 </div>
+				</div>
                 <div class="row w-100">
-                    <div class="col col-12 col-md-12"><h3 class="border-bottom fw-bold">NOTICIAS</h3></div>
+                    <div class="col col-12 col-md-12 d-flex border-bottom">
+						<h3 class="fw-bold p-2">ESTRENOS</h3>
+						<h3 class="p-2">(nombre teatro)</h3>
+					</div>
                 </div>
             </div>
         </section>
 		<section>
-			<div class="p-4">
-				<div class="row row-cols-12 row-cols-md-2 w-100 p-2 " id="filaNoticias">
+			
+                <div class="p-5">
+					<div class="row row-cols-12 row-cols-md-2 w-100" id="filaPeliculasTeatro">
+
+					</div>
+				</div>
+            
+		</section>
+
+		<section>
+            <div class="p-4">
+                <div class="row w-100">
+                    <div class="col col-12 col-md-12 d-flex border-bottom">
+						<h3 class="fw-bold p-2">ESTRENOS</h3>
+						<h3 class="p-2">(nombre teatro)</h3>
+					</div>
+                </div>
+            </div>
+        </section>
+		
+		<section>
+			
+			<div class="p-5">
+				<div class="row row-cols-12 row-cols-md-2 w-100" id="filaPeliculasTeatro2">
 
 				</div>
 			</div>
+		
 		</section>
-
 
 		<section>
             <div class="row w-100 g-0">
-                <div class="col col-12 col-md-12 w-100 banner-noticias ">
+                <div class="col col-12 col-md-12 w-100 banner-peliculas ">
                     <div class="informacion-banner-peliculas text-white container">
-						<h1 class="titulo-banner-peliculas mx-4 mt-5 fw-bold">CONOCE LA PROGRAMACION</h1>
-						<h3 class="mx-4">DE CINE PROCINAL</h3>
-						<a href="" class="border border-3 border-white p-2 text-center text-white nav-link w-25 m-4 btn btn-informacion-peliculas rounded-0 id="btn-informacion-peliculas">
+						<h1 class="titulo-banner-peliculas mx-4 mt-5 fw-bold">DIVERSION EN GRANDE</h1>
+						<h3 class="mx-4">DESDE NUESTRAS SILLAS EL CINE SE VE MEJOR</h3>
+						<a href="" class="border rounded-0 border-3 border-white p-2 text-center text-white nav-link w-25 m-4 btn btn-informacion-peliculas" id="btn-informacion-peliculas">
 							INFORMACION
 						</a>
 					</div>
@@ -173,12 +217,12 @@
 				<h5>SOBRE CINEMA PROCINAL</h5>
 				<p>Cinemas Procinal SAS., es una empresa exhibidora de cine que cuenta con catorce multiplex en Medellín y el Valle de Aburrá, el Oriente cercano, el Urabá Antioqueño, y Sincelejo.</p>
                 <ul>
-					<li class="nav-link"><a href="" class="text-danger fs-6"><i class="bi bi-chevron-double-right"></i>VER MAS</a></li>
-					<li class="nav-link"><a href="" class="text-danger fs-6"><i class="bi bi-chevron-double-right"></i>Terminos y Condiciones de uso del sitio web</a></li>
-					<li class="nav-link"><a href="" class="text-danger fs-6"><i class="bi bi-chevron-double-right"></i>Politica de privacidad de datos</a></li>
-					<li class="nav-link"><a href="" class="text-danger fs-6"><i class="bi bi-chevron-double-right"></i>Terminos y condiciones cine fans</a></li>
-					<li class="nav-link"><a href="" class="text-danger fs-6"><i class="bi bi-chevron-double-right"></i>Reglamento Autocinema</a></li>
-					<li class="nav-link"><a href="" class="text-danger fs-6"><i class="bi bi-chevron-double-right"></i>Protocolo de Biosedguridad Autocinema</a></li>
+					<li class="link"><a href="" class="text-danger fs-6"><i class="bi bi-chevron-double-right"></i>VER MAS</a></li>
+					<li class="link"><a href="" class="text-danger fs-6"><i class="bi bi-chevron-double-right"></i>Terminos y Condiciones de uso del sitio web</a></li>
+					<li class="link"><a href="" class="text-danger fs-6"><i class="bi bi-chevron-double-right"></i>Politica de privacidad de datos</a></li>
+					<li class="link"><a href="" class="text-danger fs-6"><i class="bi bi-chevron-double-right"></i>Terminos y condiciones cine fans</a></li>
+					<li class="link"><a href="" class="text-danger fs-6"><i class="bi bi-chevron-double-right"></i>Reglamento Autocinema</a></li>
+					<li class="link"><a href="" class="text-danger fs-6"><i class="bi bi-chevron-double-right"></i>Protocolo de Biosedguridad Autocinema</a></li>
 				</ul>			
 			</div>
 			<div class="col text-light">
@@ -233,7 +277,14 @@
 		</div>
 	</footer>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-
-	<script src="../controllers/controladorNoticiasN.js" type="module"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$('#datepicker').datepicker();
+		});
+	</script>
+	<script src="../controllers/controladorTeatrosAmpliados.js" type="module"></script>
 </body>
 </html>

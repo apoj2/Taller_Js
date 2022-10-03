@@ -7,7 +7,7 @@ export function pintarTeatros(teatros){
     teatros.forEach(function(teatro){
 
         let columna = document.createElement("div")
-        columna.classList.add("col","my-3")
+        columna.classList.add("col","my-3","tarjetaT")
         columna.addEventListener("mouseout",function(evento){
             columna.classList.add("border-bottom","border-danger","border-4")
         })

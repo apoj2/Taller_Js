@@ -6,9 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-	<link rel="stylesheet" href="./assets/style/style.css">
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../../assets/style/style.css">
 	
 </head>
 <body>
@@ -64,15 +66,9 @@
 					<h5 class="text-light p-3 ms-3 fw-bold">CIUDAD SELECCIONADA<i class="bi bi-geo-alt mx-3"></i></h5>
 					<select class="form-select w-25 m-2" aria-label="Default select example">
 						<option selected class="text-secondary">Medellin</option>
-						<option value="1">Todas</option>
-						<option value="2">Apartado</option>
-						<option value="3">Bello</option>
-						<option value="4">La Ceja</option>
-						<option value="5">Medellin</option>
-						<option value="6">Rionegro</option>
-						<option value="7">Sabaneta</option>
-						<option value="8">Sincelejo</option>
-						<option value="9">Soledad</option>
+						<option value="1">One</option>
+						<option value="2">Two</option>
+						<option value="3">Three</option>
 					  </select>
 				</div>
 			</div>
@@ -80,12 +76,161 @@
 	</header>
 	<main>
 
-		
+		<section class="px-4 pt-4">
+			<div class="row w-100 p-4" >
+				<div class="col col-12 col-md-6">
+					<div class="row">
+						<div class="col col-12 col-md-4">
+                          <img src="" alt="" class="img-fluid w-100" id="foto">
+						</div>
+						<div class="col col-12 col-md-8">
+                             <div class="d-flex">
+								<h5 class="fw-bold">Titulo:</h5>
+								<h6 class="p-1" id="titulo"></h6>
+							 </div>
+							 <div class="d-flex">
+								<h5 class="fw-bold">Titulo original:</h5>
+								<h6 class="p-1" id="tituloOriginal"></h6>
+							 </div>
+							 <div class="d-flex">
+								<h5 class="fw-bold">Fecha de estreno:</h5>
+								<h6 class="p-1" id="fechaDeEstreno"></h6>
+							 </div>
+							 <div class="d-flex">
+								<h5 class="fw-bold">Clasificación:</h5>
+								<h6 class="p-1" id="clasificacion"></h6>
+							 </div>
+							 <div class="d-flex">
+								<h5 class="fw-bold">Duración:</h5>
+								<h6 class="p-1" id="duracion"></h6>
+							 </div>
+							 <div class="d-flex">
+								<h5 class="fw-bold">Genero:</h5>
+								<h6 class="p-1" id="genero"></h6>
+							 </div>
+							 <div class="d-flex">
+								<h5 class="fw-bold">País:</h5>
+								<h6 class="p-1" id="pais"></h6>
+							 </div>
+
+							 <div class="mt-4">
+								<p id="descripcion"></p>
+							 </div>
+						</div>
+					</div>
+				</div>
+				<div class="col col-12 col-md-6">
+					<iframe width="560" height="315" src="" id="video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				
+			</div>
+		</section>
+
+		<section class="px-4 pb-4">
+			<div class="row w-100 px-4  text-white">
+				<div class="col col-12 col-md-4 bg-danger p-4">
+					<div>
+						<h2 class="text-center">HORARIOS Y TEATROS</h2>
+					<p class="text-center">Seleccione un teatro y fecha para conocer los horarios disponibles</p>
+					</div>
+					<div class="row">
+						<div class="col">
+							<p>Teatros:</p>
+							<select class="form-select w-75 m-2" aria-label="Default select example">
+								<option selected class="text-secondary">Seleccionar :</option>
+								<option value="1">One</option>
+								<option value="2">Two</option>
+								<option value="3">Three</option>
+							  </select>
+						</div>
+						<div class="col">
+							<p>Fecha:</p>
+							<div class="container">
+								<div class="row">
+									<form>
+										<div class="row form-group">
+											<div class="col ">
+												<div class="input-group date" id="datepicker">
+													<input type="text" class="form-control w-25" placeholder="Seleccionar:">
+													<span class="input-group-append">
+														<span class="input-group-text bg-white d-block">
+															<i class="bi bi-calendar"></i>
+														</span>
+													</span>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							 </div>
+						</div>
+					</div>
+				</div>
+				<div class="col col-12 col-md-8 bg-dark">
+					<p class="text-center p-5 mt-4 fs-4 text-light">La programacion de cine esta sujeta a cambios y/o modificaciones sin previo aviso.</p>
+				</div>
+			</div>
+		</section>
+
+
+		<section>
+            <div class="row w-100 text-light g-0">
+				<div class="col col-12 col-md-8 bg-secondary">
+					<div class="row row-cols-12 row-cols-md-4 w-100">
+						<div class="col p-4">
+							<h2>¡REGISTRATE!</h2>
+							<p>Para recibir nuestro boletín semanal con la información de nuestra programación, promociones y eventos.</p>
+						</div>
+						<div class="col">
+							<div class="mb-3">
+								<label for="exampleInputEmail1" class="form-label bg-none" placeholder="Nombre">Nombre</label>
+								<input type="text" class="form-control" id="exampleInputText1" aria-describedby="emailHelp">
+							  </div>
+							  <div class="mb-3">
+								<div class="form-check">
+								  <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
+								  <label class="form-check-label" for="disabledFieldsetCheck">
+									<h6>Acepto <a href="" class="text-light">Terminos y condiciones</a></h6>
+								  </label>
+								</div>
+							  </div>
+						</div>
+						<div class="col">
+							<div class="mb-3">
+								<label for="exampleInputEmail1" class="form-label">Email address</label>
+								<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+								<div id="emailHelp" class="form-text text-light">We'll never share your email with anyone else.</div>
+							  </div>
+							  <div class="mb-3 ">
+								<button type="submit" class="btn text-light mx-auto d-block m-xxl-auto">ENVIAR</button>
+							  </div>
+						</div>
+						<div class="col">
+							<div class="mb-3 text-center">
+								<h3>COMUNICATE CON NOSTROS</h3>
+								<a href="" class="text-light">HAZ CLICK AQUI</a>
+							</div>
+							<div class="mb-3 text-center">
+								<h3>PREGUNTAS FRECUENTES</h3>
+								<a href="" class="text-light">LEER MÁS</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col col-12 col-md-4 bg-danger">
+					<div class="mb-3 text-center p-5">
+						<h5>¿QUIERES CONSULTAR TU HISTORIAL DE COMPRA?</h5>
+						<a href="" class="text-light">HAZ CLICK AQUI</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
 	</main>
 	<section>
 		<div class="row row-cols-12 row-cols-md-4 w-100 bg-dark p-5 g-0">
 			<div class="col">
-				<a href=""><img src="./assets/img/logoprocinal2.png" alt="" class="img-fluid w-100"></a>
+				<a href=""><img src="../../assets/img/logoprocinal2.png" alt="" class="img-fluid w-100"></a>
 			</div>
 			<div class="col text-light">
 				<h5>SOBRE CINEMA PROCINAL</h5>
@@ -131,7 +276,7 @@
 				<div class="row">
 					<h5>INFORMACION DE LA EMPRESA</h5>
 					<p>Promotora Nacional de Cines S.A.S Nit:
-						890939520-9 Cra 48 # 50 SUR 128 Local 5163. Centro Comercial Mayorca, Sabaneta, Colombia.
+						890939520-9 Cra 48 # 50 SUR 128 Local 5163. Centro COmercial Mayorca, Sabaneta, Colombia.
 					</p>
 				</div>
 			</div>
@@ -151,7 +296,14 @@
 		</div>
 	</footer>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-
-	<script src="./src/controllers/controladorIndex.js" type="module"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+	<script src="../controllers/controladorPeliculasAmpliadas.js" type="module"></script>
+	<script type="text/javascript">
+		$(function() {
+			$('#datepicker').datepicker();
+		});
+	</script>
 </body>
 </html>

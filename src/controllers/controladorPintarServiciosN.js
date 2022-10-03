@@ -5,52 +5,62 @@ export function pintarServiciosN(servicios){
 
     servicios.forEach(function(servicio){
 
-        let columna = document.createElement("div")
-        columna.classList.add("col","my-2")
+        let columnaS = document.createElement("div")
+        columnaS.classList.add("col","my-2","tarjetaS")
 
-        let tarjeta = document.createElement("div")
-        tarjeta.classList.add("w-100","shadow","pointer","tarjeta-servicios")
+        let tarjetaS = document.createElement("div")
+        tarjetaS.classList.add("w-100","shadow","pointer","tarjetaS")
 
-        let imagen = document.createElement("img")
-        imagen.classList.add("img-fluid","w-100","grayscale")
-        imagen.src=servicio.foto
+        let imagenS = document.createElement("img")
+        imagenS.classList.add("img-fluid","w-100","grayscale")
+        imagenS.src=servicio.foto
 
-        let nombre = document.createElement("h5")
-        nombre.classList.add("mx-3","mt-2","fw-bold")
-        nombre.textContent=servicio.titulo
+        let videoS = document.createElement("iframe")
+        videoS.classList.add("d-none")
+        videoS.src=servicio.video
 
-        let separador=document.createElement("p")
-        separador.classList.add("mx-3")
-        separador.textContent="--------------------------------------------------"
+        let nombreS = document.createElement("h5")
+        nombreS.classList.add("mx-3","mt-2","fw-bold")
+        nombreS.textContent=servicio.titulo
+
+        let separadorS=document.createElement("p")
+        separadorS.classList.add("mx-3")
+        separadorS.textContent="--------------------------------------------------"
         
 
         
 
-        let descripcion = document.createElement("p")
-        descripcion.classList.add("mx-3")
-        descripcion.textContent=servicio.descripcion
+        let descripcionS = document.createElement("p")
+        descripcionS.classList.add("mx-3")
+        descripcionS.textContent=servicio.descripcion
+
+        let descripcion2S = document.createElement("h6")
+        descripcion2S.classList.add("mx-3","d-none")
+        descripcion2S.textContent=servicio.descripcion2
          
-        let divisionBoton = document.createElement("div")
+        let divisionBotonS = document.createElement("div","tarjetaS")
 
 
-        let boton =document.createElement("a")
-        boton.classList.add("text-danger","nav-link","pointer","p-3","text-center")
-        boton.textContent="+ MAS INFORMACION"
+        let botonS =document.createElement("a")
+        botonS.classList.add("text-danger","nav-link","pointer","p-3","text-center")
+        botonS.textContent="+ MAS INFORMACION"
         
-        boton.addEventListener("mouseout",function(evento){
-            boton.classList.remove("nav-link")
+        botonS.addEventListener("mouseout",function(evento){
+            botonS.classList.remove("nav-link")
         })
-        boton.addEventListener("mouseleave",function(evento){
-            boton.classList.add("nav-link")
+        botonS.addEventListener("mouseleave",function(evento){
+            botonS.classList.add("nav-link")
         })
 
-        tarjeta.appendChild(imagen)
-        tarjeta.appendChild(nombre)
-        tarjeta.appendChild(separador)
-        tarjeta.appendChild(descripcion)
-        tarjeta.appendChild(divisionBoton)
-        divisionBoton.appendChild(boton)
-        columna.appendChild(tarjeta)
-        filaServicios.appendChild(columna)
+        tarjetaS.appendChild(imagenS)
+        tarjetaS.appendChild(videoS)
+        tarjetaS.appendChild(nombreS)
+        tarjetaS.appendChild(separadorS)
+        tarjetaS.appendChild(descripcionS)
+        tarjetaS.appendChild(descripcion2S)
+        tarjetaS.appendChild(divisionBotonS)
+        divisionBotonS.appendChild(botonS)
+        columnaS.appendChild(tarjetaS)
+        filaServicios.appendChild(columnaS)
     })
 }

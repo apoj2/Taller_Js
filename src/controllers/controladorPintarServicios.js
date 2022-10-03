@@ -7,7 +7,7 @@ export function pintarServicios(servicios){
         
       if(servicio.lado==1){
         let columna = document.createElement("div")
-        columna.classList.add("col","col-12","col-md-12","d-flex","w-100","pointer")
+        columna.classList.add("col","col-12","col-md-12","d-flex","w-100","pointer","tarjetaS")
 
         let columna1 = document.createElement("div")
         columna1.classList.add("col","w-100","p-3")
@@ -44,7 +44,7 @@ export function pintarServicios(servicios){
       }
       if(servicio.lado==2){
         let columna = document.createElement("div")
-        columna.classList.add("col","col-12","col-md-12","d-flex","w-100","pointer")
+        columna.classList.add("col","col-12","col-md-12","d-flex","w-100","pointer","tarjetaS")
 
         let columna1 = document.createElement("div")
         columna1.classList.add("col","w-100","p-3")
